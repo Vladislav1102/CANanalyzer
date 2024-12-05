@@ -1,0 +1,5 @@
+# ninja log v5
+0	308	1733413141702535105	CMakeFiles/CANanalyzer.dir/main.cpp.o	928a0ed6643318c9
+1	376	1733413141770533188	CMakeFiles/CANanalyzer.dir/src/logger.cpp.o	1096840356588016
+0	378	1733413141770533188	CMakeFiles/CANanalyzer.dir/src/reading_frame.cpp.o	444e210f2fd0c6fa
+1	5093	1733413146442401538	CMakeFiles/CANanalyzer.dir/src/socket.cpp.o	529d6153137d04d6

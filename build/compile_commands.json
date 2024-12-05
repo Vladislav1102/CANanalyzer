@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/vladislav/my_project/CANanalyzer/build",
+  "command": "clang++ -I/home/vladislav/my_project/CANanalyzer/include   -target arm-linux-gnueabihf -g -std=gnu++17 -o CMakeFiles/CANanalyzer.dir/main.cpp.o -c /home/vladislav/my_project/CANanalyzer/main.cpp",
+  "file": "/home/vladislav/my_project/CANanalyzer/main.cpp",
+  "output": "CMakeFiles/CANanalyzer.dir/main.cpp.o"
+},
+{
+  "directory": "/home/vladislav/my_project/CANanalyzer/build",
+  "command": "clang++ -I/home/vladislav/my_project/CANanalyzer/include   -target arm-linux-gnueabihf -g -std=gnu++17 -o CMakeFiles/CANanalyzer.dir/src/reading_frame.cpp.o -c /home/vladislav/my_project/CANanalyzer/src/reading_frame.cpp",
+  "file": "/home/vladislav/my_project/CANanalyzer/src/reading_frame.cpp",
+  "output": "CMakeFiles/CANanalyzer.dir/src/reading_frame.cpp.o"
+},
+{
+  "directory": "/home/vladislav/my_project/CANanalyzer/build",
+  "command": "clang++ -I/home/vladislav/my_project/CANanalyzer/include   -target arm-linux-gnueabihf -g -std=gnu++17 -o CMakeFiles/CANanalyzer.dir/src/socket.cpp.o -c /home/vladislav/my_project/CANanalyzer/src/socket.cpp",
+  "file": "/home/vladislav/my_project/CANanalyzer/src/socket.cpp",
+  "output": "CMakeFiles/CANanalyzer.dir/src/socket.cpp.o"
+},
+{
+  "directory": "/home/vladislav/my_project/CANanalyzer/build",
+  "command": "clang++ -I/home/vladislav/my_project/CANanalyzer/include   -target arm-linux-gnueabihf -g -std=gnu++17 -o CMakeFiles/CANanalyzer.dir/src/logger.cpp.o -c /home/vladislav/my_project/CANanalyzer/src/logger.cpp",
+  "file": "/home/vladislav/my_project/CANanalyzer/src/logger.cpp",
+  "output": "CMakeFiles/CANanalyzer.dir/src/logger.cpp.o"
+}
+]
