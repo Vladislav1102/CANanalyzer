@@ -1,5 +1,9 @@
-#include <iostream>
+#include "include/reading_frame.hpp"
+#include "include/socket.hpp"
 
 int main(void) {
-    std::cout << "Hello" << std::endl;
+    Socket sock;
+    int fd_socket = sock.connecting_socket();
+    FrameReader frame(fd_socket);
+    frame.read_frame();
 }
