@@ -1,5 +1,11 @@
 # ninja log v5
-0	308	1733413141702535105	CMakeFiles/CANanalyzer.dir/main.cpp.o	928a0ed6643318c9
-1	376	1733413141770533188	CMakeFiles/CANanalyzer.dir/src/logger.cpp.o	1096840356588016
-0	378	1733413141770533188	CMakeFiles/CANanalyzer.dir/src/reading_frame.cpp.o	444e210f2fd0c6fa
-1	5093	1733413146442401538	CMakeFiles/CANanalyzer.dir/src/socket.cpp.o	529d6153137d04d6
+1	3126	1733848071053994053	CMakeFiles/CANanalyzer.dir/src/socket.cpp.o	28207e248ada7fdc
+0	3165	1733848071093993240	CMakeFiles/CANanalyzer.dir/src/reading_frame.cpp.o	728b0f3bb83db16a
+1	5561	1733848073457946960	CMakeFiles/CANanalyzer.dir/src/logger.cpp.o	1db4ec025b20ea4c
+0	570	1733848068502050391	CMakeFiles/CANanalyzer.dir/main.cpp.o	5c92597b77c0bc9a
+5561	6035	1733848073965937573	CANanalyzer	4114b71b0c65ece7
+2	357	1733853247022813726	CMakeFiles/CANanalyzer.dir/main.cpp.o	5c92597b77c0bc9a
+2	2883	1733853249542735596	CMakeFiles/CANanalyzer.dir/src/socket.cpp.o	28207e248ada7fdc
+2	2892	1733853249550735348	CMakeFiles/CANanalyzer.dir/src/reading_frame.cpp.o	728b0f3bb83db16a
+3	5219	1733853251838664457	CMakeFiles/CANanalyzer.dir/src/logger.cpp.o	1db4ec025b20ea4c
+5219	5579	1733853252242651945	CANanalyzer	4114b71b0c65ece7

@@ -140,6 +140,7 @@ CANanalyzer: CMakeFiles/CANanalyzer.dir/src/reading_frame.cpp.o
 CANanalyzer: CMakeFiles/CANanalyzer.dir/src/socket.cpp.o
 CANanalyzer: CMakeFiles/CANanalyzer.dir/src/logger.cpp.o
 CANanalyzer: CMakeFiles/CANanalyzer.dir/build.make
+CANanalyzer: /home/vladislav/my_project/spdlog/lib/libspdlog.a
 CANanalyzer: CMakeFiles/CANanalyzer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vladislav/my_project/CANanalyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable CANanalyzer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CANanalyzer.dir/link.txt --verbose=$(VERBOSE)

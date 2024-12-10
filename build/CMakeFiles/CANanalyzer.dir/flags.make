@@ -4,7 +4,7 @@
 # compile CXX with clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/vladislav/my_project/CANanalyzer/include
+CXX_INCLUDES = -I/home/vladislav/my_project/CANanalyzer/include -I/home/vladislav/my_project/spdlog/include
 
 CXX_FLAGS =   -target arm-linux-gnueabihf -std=gnu++17
 

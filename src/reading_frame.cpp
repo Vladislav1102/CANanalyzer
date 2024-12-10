@@ -7,14 +7,15 @@ FrameReader::~FrameReader() {
 }
 
 void FrameReader::read_frame() {
-    Logger logger;
+    Logger logger(spdlog::level::info);
     while(1) {
         nbytes = read(fd_socket, &frame, sizeof(struct can_frame)); 
 
         if(nbytes < 0) {
             std::cout << "Error reading frame" << std::endl;
-            logger.log(LogLevel::INFO, "Error reading frame");
         }
+        
+        logger.WriterLog(frame);
         printf("CAN_ID - [%02X]\t DATA - ", frame.can_id);
         for (int i = 0; i < frame.can_dlc; ++i) {
             printf("%02X ", frame.data[i]);

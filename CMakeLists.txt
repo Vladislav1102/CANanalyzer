@@ -9,15 +9,13 @@ add_executable(CANanalyzer main.cpp)
 add_subdirectory(include)
 add_subdirectory(src)
 
-find_package(fmt REQUIRED)
-find_package(spdlog REQUIRED)
+include_directories(include /home/vladislav/my_project/spdlog/include)
 
-# Добавьте библиотеки для линковки
 target_link_libraries(CANanalyzer
-    fmt
-    spdlog
+    /home/vladislav/my_project/spdlog/lib/libspdlog.a
     pthread
 )
+
 set(CMAKE_SYSROOT ${SYSROOT_ARM32})
 
 set(CMAKE_C_COMPILER clang)

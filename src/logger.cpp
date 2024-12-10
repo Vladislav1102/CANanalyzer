@@ -1,55 +1,55 @@
 #include "../include/logger.hpp"
 
-const std::string filename = "logging_can.log";
-static std::ofstream logFile;
+Logger::Logger(spdlog::level::level_enum file_level) {
+    auto logger = spdlog::basic_logger_mt("CAN_logger", log_file_path);
+    logger->set_pattern("[%Y-%m-%d %H:%M:%S.%e] [%n] [%^%l%$] %v]");
+    logger->set_level(file_level);
+}
 
-Logger::Logger() {
-    logFile.open(filename, std::ios::app);
+Logger::~Logger() {}
 
-    if(!logFile.is_open()) {
-        std::cout << "Error opening log file" << std::endl;
+void Logger::WriterLog(const struct can_frame& frame) {
+    oss << "CAN_ID: " << frame.can_id << "\tData: ";
+
+    for(size_t i = 0; i < frame.len; ++i) {
+        oss << std::setw(2) << std::setfill('0') << static_cast<int>(frame.data[i]) << " ";
     }
+
+    logger_ -> info(oss.str());
 }
 
-Logger::~Logger() {
-    logFile.close();
-}
+// void Logger::Trace(const std::string& message) {
+//     logger_->trace(message);
+// }
 
-std::string levelToString(LogLevel level) {
-    switch(level) {
-        case DEBUG:
-            return "DEBUG";
-        case INFO:
-            return "INFO";
-        case WARNING:
-            return "WARNING";
-        case ERROR:
-            return "ERROR";
-        case CRITICAL:
-            return "CRITICAL";
-        default:
-            return "UNKNOWN";
-    }
-}
+// void Logger::debug(const std::string& message) {
+//     logger_->debug(message);
+// }
 
-void log(LogLevel level, const std::string& message) {
-    time_t now = time(0);
-    tm* timeinfo = localtime(&now);
-    char timestamp[20];
-    strftime(timestamp, 
-                sizeof(timestamp), 
-                "%Y-%m-%d %H:%M:%S", 
-                timeinfo);
+// void Logger::info(const std::string& message) {
+//     logger_->info(message);
+// }
 
-    std::ostringstream logEntry;
-    logEntry << "[" << timestamp << "] " 
-             << levelToString(level) 
-             << ":" << message 
-             << std::endl;
-    std::cout << logEntry.str();
+// void Logger::warn(const std::string& message) {
+//     logger_->warn(message);
+// }
 
-    if(logFile.is_open()) {
-        logFile << logEntry.str();
-        logFile.flush();
-    }
-}
+// void Logger::error(const std::string& message) {
+//     logger_->error(message);
+// }
+
+// void Logger::critical(const std::string& message) {
+//     logger_->critical(message);
+// }
+
+// void Logger::infoHex(const std::string& message, int value) {
+//     logger_->info("{} {:x}", value);
+// }
+
+// void Logger::debugHex(const std::string& message, int value) {
+//     logger_->debug("{} {:x}", value);
+// }
+
+// void Logger::TraceHex(const std::string& messagem, int value) {
+//     logger_->trace("{} {:x}", value);
+// }

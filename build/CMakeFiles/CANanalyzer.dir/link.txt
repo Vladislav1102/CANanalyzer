@@ -1,1 +1,1 @@
-clang++   -target arm-linux-gnueabihf  -static CMakeFiles/CANanalyzer.dir/main.cpp.o CMakeFiles/CANanalyzer.dir/src/reading_frame.cpp.o CMakeFiles/CANanalyzer.dir/src/socket.cpp.o CMakeFiles/CANanalyzer.dir/src/logger.cpp.o -o CANanalyzer  -lfmt -lspdlog -lpthread 
+clang++   -target arm-linux-gnueabihf  -static CMakeFiles/CANanalyzer.dir/main.cpp.o CMakeFiles/CANanalyzer.dir/src/reading_frame.cpp.o CMakeFiles/CANanalyzer.dir/src/socket.cpp.o CMakeFiles/CANanalyzer.dir/src/logger.cpp.o -o CANanalyzer  /home/vladislav/my_project/spdlog/lib/libspdlog.a -lpthread 
